@@ -26,3 +26,5 @@ and You must create a 1gb Disk image before you start or else you wont be able t
 
 - Take a look in the run.txt folder, and there are instructions on how to compile each.
 
+Preview:
+![Alt Text](Success_run.png)
