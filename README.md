@@ -16,6 +16,7 @@ Cortez CRT Terminal
 and You must create a 1gb Disk image before you start or else you wont be able to run any process at all, 
 
 - The disk image has to be named data.img, and the size is 1024 mb.
+- Then store the disk image inside the tools folder
 
 #Developer
 
