@@ -1,8 +1,10 @@
-Compile Backend:
+To Compile the binaries:
+
+To Compile Backend:
 gcc -O2 -Wall -o cortez_backend cortez_backend.c -lutil -lpthread
 
-Compile Frontend:
+To Compile Frontend:
 gcc -O2 -Wall -o cortez_frontend_crt cortez_frontend.c -lSDL2 -lSDL2_ttf -lm
 
-Compile Netrunner: 
+To Compile Netrunner: 
 gcc -o net-runner net_runner.c
