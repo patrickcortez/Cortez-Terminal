@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+# RootDir/cortez_frontend  -- wrapper that launches the real frontend via memmgr
+
+HERE="$(cd "$(dirname "$0")" && pwd)"
+TOOLS="$HERE/tools"
+MEMMGR="$TOOLS/cortez_memmgr"
+IMG="$TOOLS/data.img"
+
+# memmgr options (tune these as desired)
+IMG_SIZE_MB=1024
+MEM_MB=512
+SWAP_MB=1024
+
+# path to real frontend executable
+REAL="$HERE/cortez_frontend_crt.bin"
+
+# If memmgr missing, fallback to exec real frontend
+if [ ! -x "$MEMMGR" ]; then
+  echo "WARNING: memmgr not found or not executable; running frontend normally" >&2
+  exec "$REAL" "$@"
+fi
+
+# Launch frontend under memmgr so it runs in the cgroup and can use data.img swap
+exec "$MEMMGR" --img-path "$IMG" --img-size-mb "$IMG_SIZE_MB" --mem-mb "$MEM_MB" --swap-mb "$SWAP_MB" -- "$REAL" "$@"

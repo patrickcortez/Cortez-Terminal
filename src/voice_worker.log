@@ -1,0 +1,15 @@
+Selected playback device: default
+Using TTS: espeak-ng
+LOG (VoskAPI:ReadDataFiles():model.cc:213) Decoding params beam=13 max-active=7000 lattice-beam=8
+LOG (VoskAPI:ReadDataFiles():model.cc:216) Silence phones 1:2:3:4:5:6:7:8:9:10
+LOG (VoskAPI:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 0 orphan nodes.
+LOG (VoskAPI:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 0 orphan components.
+LOG (VoskAPI:ReadDataFiles():model.cc:248) Loading i-vector extractor from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/ivector/final.ie
+LOG (VoskAPI:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (VoskAPI:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+LOG (VoskAPI:ReadDataFiles():model.cc:279) Loading HCLG from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/graph/HCLG.fst
+LOG (VoskAPI:ReadDataFiles():model.cc:297) Loading words from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/graph/words.txt
+LOG (VoskAPI:ReadDataFiles():model.cc:308) Loading winfo /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/graph/phones/word_boundary.int
+LOG (VoskAPI:ReadDataFiles():model.cc:315) Loading subtract G.fst model from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/rescore/G.fst
+LOG (VoskAPI:ReadDataFiles():model.cc:317) Loading CARPA model from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/rescore/G.carpa
+LOG (VoskAPI:ReadDataFiles():model.cc:323) Loading RNNLM model from /home/cortez/vosk-models/vosk-model-en-us-0.42-gigaspeech/rnnlm/final.raw
